@@ -1,0 +1,55 @@
+.headings-h1,
+.headings-h2,
+.headings-h3 {
+    font-weight: normal;
+}
+
+.headings-h1 {
+    font-family: $font-family-heading;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    line-height: 1;
+    color: $color-heading;
+    text-align: center;
+    @include media-breakpoint-up(xs) {
+        font-size: 1.225em;
+    }
+    @include media-breakpoint-up(sm) {
+        font-size: $h2-size;
+    }
+    @include media-breakpoint-up(md) {
+        font-size: 80px;
+    }
+}
+
+.headings-h2 {
+    font-family: $font-family-heading;
+    text-transform: uppercase;
+    margin-bottom: 1.5em;
+    line-height: 1;
+    color: $color-heading-light;
+    text-align: center;
+    text-shadow: 0px 1px 0px #db8300;
+    letter-spacing: 0.08em;
+    @include media-breakpoint-up(xs) {
+        font-size: 1.225em;
+    }
+    @include media-breakpoint-up(sm) {
+        font-size: $h2-size;
+    }
+
+    &--dark {
+        color: #333333;
+        text-shadow: none;
+    }
+}
+
+.headings-h3 {
+    font-family: $font-family-subheading;
+    line-height: 1;
+    margin-bottom: 17px;
+    font-size: $h3-size;
+    color: $color-heading;
+}
+
+
